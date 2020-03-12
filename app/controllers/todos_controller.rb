@@ -1,6 +1,5 @@
 class TodosController < ApplicationController
     def index
-        render plain: "I am cool"
-        render plain: User.all
+        render plain: "Hello Rails! #{Time.now.to_s(:short)}"
     end
 end
