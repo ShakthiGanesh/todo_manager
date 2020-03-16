@@ -10,5 +10,11 @@ class UsersController < ApplicationController
         password=params[:password]
         new_user=User.create!(name: name,email: email, password: password)
         render plain: "A new user is created with the id #{new_user.id}"
-    end    
+    end 
+
+    def  show
+        id=params[:id]
+        user=User.find(id) 
+        render plain:"User with id #{id} : #{user.to_look_pleasant}"
+    end 
 end
