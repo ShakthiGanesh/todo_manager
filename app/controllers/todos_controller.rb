@@ -13,7 +13,7 @@ class TodosController < ApplicationController
             due_date: due_date,
             completed: false 
             )
-            render plain:"The new todo is created with id #{new_todo.id}"
+        render plain:"The new todo is created with id #{new_todo.id}"
     end
 
     def show

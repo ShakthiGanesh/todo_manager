@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
     skip_before_action :verify_authenticity_token
+    
     def index
         render plain: User.all.map{|user| user.to_look_pleasant}.join("\n")
     end
@@ -17,4 +18,9 @@ class UsersController < ApplicationController
         user=User.find(id) 
         render plain:"User with id #{id} : #{user.to_look_pleasant}"
     end 
+
+    def login
+        user=User.where(email: params[:email] ,password: params[:password]).exists?
+        render plain: user
+    end
 end
