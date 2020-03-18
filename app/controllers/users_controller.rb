@@ -20,7 +20,6 @@ class UsersController < ApplicationController
     end 
 
     def login
-        user=User.where(email: params[:email] ,password: params[:password]).exists?
-        render plain: user
+        render plain: User.where(email: params[:email] ,password: params[:password]).exists?
     end
 end
