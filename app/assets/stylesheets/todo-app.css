@@ -67,6 +67,7 @@ body {
     margin-bottom: 16px;
     color: #453C52;
     font-size: 14px;
+    padding-top: 2px;
 
 }
 
@@ -76,6 +77,7 @@ body {
     margin-bottom:6px;
     color: #453c52;
     display: flex;
+    align-items: inline;
 }
 
 .TodoItem-checkbox {
@@ -86,12 +88,6 @@ body {
 
 }
 
-.TodoItem-overduelabel {
-    color:red;
-    margin-left:10px;
-    display: inline;
-    font-size: 12px;
-}
 
 .TodoItem-container {
     display: inline-flex;
@@ -105,6 +101,7 @@ body {
     display: inline;
     color:#726A7E;
     margin-left: 10px;
+    padding-bottom: 7px;
 }
 
 .TodoTitle {
@@ -112,8 +109,26 @@ body {
     align-items: center;
 }
 
-.TrashImage {
-    max-width: 10px;
-    max-height: 14px;
+
+.TodoSection-duedate {
+    color: rgb(67, 63, 71);
+    font-size: 10px;
+    margin-left: 10px;
+    align-self: top;
+    padding-top: 5px;
+}
+
+.TodoItem-delete {
+    display: none;
+}
+
+.TodoItem:hover .TodoItem-delete {
+    display:block;
+}
+
+.TrashBin img{
+    max-width: 12px;
+    max-height: 16px;
     padding-left: 10px;
+    padding-top: 4px;
 }
