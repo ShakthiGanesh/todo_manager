@@ -93,7 +93,7 @@ body {
     display: inline-flex;
     padding: 2px 8px;
     align-items: center;
-
+TodoSection-todocompleted
 }
 
 .TodoItem-date {
@@ -126,9 +126,17 @@ body {
     display:block;
 }
 
-.TrashBin img{
+.TrashBin img {
     max-width: 12px;
     max-height: 16px;
     padding-left: 10px;
     padding-top: 4px;
+}
+
+.TodoSection-todocompleted {
+    text-decoration: line-through;
+    margin-bottom: 16px;
+    color: #453C52;
+    font-size: 14px;
+    padding-top: 2px;
 }
