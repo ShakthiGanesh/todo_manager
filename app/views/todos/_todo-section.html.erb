@@ -1,30 +1,26 @@
 <section class="TodoSection">
                 <div class="TodoTitle">
                     <h2 class="TodoSection-title"> <%= section_title %> </h2>
-                    <p class="TodoItem-date"> <%= todos.completed.count %> / <%= todos.count %> </p>
+                    <p class="TodoItem-date"> <%= todos.completed.count %> / <%= todos.count %> </p>            
                 </div>
-                <% todos.each do |todo| %>
-                    <% if ((hide_completed == false) | (todo.completed == false)) %>    
+                <% todos.each do |todo| %> 
                     <ul class="TodoItem">           
-                    
-                        <% if (todo.completed == true) %>
-                            <input class="TodoItem-checkbox" type = "checkbox" checked>
-                            <li class="TodoSection-todocompleted"> <%= todo.todo_text %> </li>
-                        <% else %>
-                            <input class="TodoItem-checkbox" type="checkbox">
-                            <li class="TodoSection-todo"> <%= todo.todo_text %> </li>
+                        <%= form_with(url: "/todos/#{todo.id}", method: "PUT") do %>
+                            <input class="TodoItem-checkbox"
+                            name="completed"
+                            type="checkbox" <%= todo.completed ? "checked" : "" %>
+                            onclick="this.form.submit()" />
                         <% end %>
-                        
-                        <% if show_duedate %>
+                        <li class='<%= todo.completed ? "TodoSection-todocompleted" : "TodoSection-todo" %>'> <%= todo.todo_text %> </li>
+                        <% if show_duedate %>                                 
                             <li class="TodoSection-duedate"> <%= todo.due_date.to_s(:short) %> </li>
                         <% end %>
                         <div>
                             <a class="TodoItem-delete">
-                            <div class="TrashBin"> <img src="trashbin.png" /> </div>
+                                <div class="TrashBin"> <img src="trashbin.png" /> </div>
                             </a> 
                         </div>
-
-                    </ul>    
-                    <% end %>  
-                <% end %>
+                    </ul> 
+                <% end %>   
+              
 </section>        
