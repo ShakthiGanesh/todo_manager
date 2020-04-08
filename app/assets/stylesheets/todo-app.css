@@ -126,7 +126,7 @@ body {
     display:block;
 }
 
-.TrashBin img {
+.TrashBin {
     max-width: 12px;
     max-height: 16px;
     padding-left: 10px;
