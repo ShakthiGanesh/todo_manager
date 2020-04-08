@@ -19,12 +19,11 @@
                             <a class="TodoItem-delete">
                                 <div>
                                     <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %> 
-                                        <input type='image' src="trashbin.png" class="TrashBin"> 
+                                       <input type='image' src="trashbin.png" class="TrashBin"> 
                                     <% end %>
                                 </div>
                             </a> 
                         </div>
                     </ul> 
                 <% end %>   
-              
 </section>        
