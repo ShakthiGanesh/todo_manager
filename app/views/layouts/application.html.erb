@@ -10,6 +10,12 @@
   </head>
 
   <body>
+
+     <% if flash[:success] %>
+      <p class="SuccessHeader">
+        <%= flash[:success] %>
+      </p>
+    <% end %>
     
     <% if @current_user %>
       <p class="UserHeader">
@@ -17,6 +23,14 @@
         <%= link_to "Sign-Out", destroy_session_path, method: "delete" %>
       </p>
     <% end %>
+
+    <% if flash[:error] %>
+      <p class="ErrorHeader">
+        <%= flash[:error] %>
+      </p>
+    <% end %>
+
+    
     <%= yield %>
 
   </body>

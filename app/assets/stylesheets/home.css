@@ -16,3 +16,19 @@
      display: flex;
      justify-content: space-between;
  }
+
+ .ErrorHeader {
+     background: rgb(238, 162, 162);
+     color: darkred;
+     font-size: 16px;
+     padding: 10px;
+     margin-bottom: 15px;
+ }
+
+ .SuccessHeader {
+     font-size: 16px;
+     padding: 10px;
+     margin-bottom: 15px;
+     background: lightgreen;
+     color: green;
+ }
