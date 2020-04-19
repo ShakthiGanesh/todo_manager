@@ -1,0 +1,75 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.CafeTitle {
+    color: darkgreen;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+    padding: 60px;
+   
+}
+
+.SearchImage {
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
+    
+    
+    
+}
+
+.SearchImage:hover {
+     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.Search-menu {
+    display: inline-flex;
+    margin-left: 700px;
+    margin-top: 15px;
+    
+
+}
+
+.SearchMenu {
+    margin-right: 15px;
+}
+
+.SignUp-button {
+display: block;
+  transition-duration: 0.4s;
+  max-height: 40px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.SignUp-button:hover {
+  background-color:white; 
+  color: black;
+  
+}
+
+.MainHeader {
+    display: flex;
+    background: lightcyan;
+}
+
+.LogIn-link {
+    color: darkgreen;
+    margin-top: 21px;
+    margin-left: 280px;
+    margin-right: 10px;
+    max-width: 70px;
+    max-height: 30px;
+    font-family: serif;
+    font-size: 18px;
+
+    
+}

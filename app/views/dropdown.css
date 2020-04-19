@@ -1,0 +1,72 @@
+.MainHeader {
+    display: flex;
+    background: lightcyan;
+}
+
+.CafeTitle {
+    color: darkgreen;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 60px;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Cafe-dropdown {
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    width: 99px;
+    margin-left: auto;
+    margin-right: 41px;
+    margin-top: 10px;
+
+}
+
+.Cafe-dropdown:hover .Dropdown-content {
+    display: block;
+
+}
+
+.Dropdown-button {
+    background-color: darkgreen;
+    border: none;
+    padding: 9px;
+    color: white;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.Dropdown-button i {
+    padding-left: 3px;
+}
+
+.Dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightcyan;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 15px;
+}
+
+
+.Dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.Dropdown-content a:hover {
+    background-color: lightgreen;
+}   
+

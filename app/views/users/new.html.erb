@@ -1,23 +1,23 @@
 <h1 class="UsersNew-title"> Welcome new user! </h1>
 <section class="UsersNew">
     <%= form_with url: users_path do |form| %>
-        <div class= "Form-section">
-            <p class="FormInput-title"> First Name : </p>
-            <%= form.text_field :first_name, class: "Form-input" %>
+        <div class="Form-section">
+            <p class="FormInput-title" > First Name :  </p>
+            <%= form.text_field :first_name, class: "Form-input", autofocus: true %>
         </div>
-        <div class= "Form-section">
+        <div class="Form-section">
             <p class="FormInput-title"> Last Name : </p>
             <%= form.text_field :last_name, class: "Form-input" %>
         </div>
-        <div class= "Form-section">
+        <div class="Form-section">
             <p class="FormInput-title"> Email : </p>
             <%= form.email_field :email, class: "Form-input" %>
         </div>
-        <div class= "Form-section">
+        <div class="Form-section">
             <p class="FormInput-title"> Password : </p>
             <%= form.password_field :password, class: "Form-input" %>
         </div>
-        <div class= "Form-section">
+        <div class="Form-section">
             <%= form.submit "Sign-Up!", class: "Form-submit" %>
         </div>
     <% end %>
